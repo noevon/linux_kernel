@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Remote attach",
+            "type": "lldb",
+            "request": "custom",
+            "targetCreateCommands": ["target create kernel.sym"],
+            "processCreateCommands": ["gdb-remote 1234"],
+            "sourceMap": {"Your build path" : "Your source code path"}
+        }
+    ]
+}
